@@ -1,0 +1,80 @@
+body{
+  font-family: Arial, sans-serif;
+  background:rgb(251, 240, 225);
+  margin: 0;
+}
+h2{
+    text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.toggle {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 15px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.birthday, .height {
+  display: flex;
+  gap: 5px;
+}
+.container1{
+  display: block;
+  /* align-items: center;
+  justify-content: space-between; */
+  width:35%;
+  margin-left:500px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+a{
+  border:1.5px solid rgb(5, 5, 23);
+  background-color: #0056b3;
+  color: aliceblue;
+  margin-left: 220px;
+}
