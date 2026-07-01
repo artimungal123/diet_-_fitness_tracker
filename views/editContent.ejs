@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Content</title>
+</head>
+<body>
+    <h1>Edit Content</h1>
+    <p> ID : <%= post.id %></p>
+    <p>UserName : <%= post.username %></p>
+    <form method="POST" action="/posts/edit/<%= post.id %>">
+        <label for="content">Content:</label>
+        <input type="text" id="content" name="content" value="<%= post.content %>">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
