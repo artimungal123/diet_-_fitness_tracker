@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="container1">
+    <h2>Create Your Free Account</h2>
+    
+    <form id="signupForm">
+      <!-- Basic Details -->
+      <label>First Name</label>
+      <input type="text" id="firstName" placeholder="First Name" required>
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Email Address" required>
+
+      <label>Password</label>
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <span class="toggle" onclick="togglePassword('password')">👁</span>
+      </div>
+
+      <label>Confirm Password</label>
+      <div class="password-box">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <span class="toggle" onclick="togglePassword('confirmPassword')">👁</span>
+      </div>
+
+      <!-- Profile Details -->
+      <h3>Profile Details</h3>
+      
+      <label>Sex</label>
+      <div>
+        <input type="radio" name="sex" value="Male" required> Male
+        <input type="radio" name="sex" value="Female" required> Female
+      </div>
+
+      <label>Birthday</label>
+      <div class="birthday">
+        <select id="day">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="8">7</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <!-- Add more days -->
+        </select>
+        <select id="month">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">February</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="Octomber">Octomber</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+          
+
+          <!-- Add more months -->
+        </select>
+        <select id="year">
+          <option value="1985">1985</option>
+          <option value="1990">1990</option>
+          <option value="2000">2000</option>
+          <option value="2000">2004</option>
+          <option value="2000">2005</option>
+          <option value="2000">2006</option>
+        </select>
+      </div>
+
+      <label>Height</label>
+      <div class="height">
+        <input type="number" id="feet" placeholder="ft">
+        <input type="number" id="inch" placeholder="in">
+        OR
+        <input type="number" id="cm" placeholder="cm">
+      </div>
+
+      <label>Weight</label>
+      <input type="number" id="weight" placeholder="Weight in Pounds">
+
+      <a href="main.html" alt="error">Create Account</a>
+    </form>
+  </div>
+  
+  <script src="signup.js"></script>
+</body>
+</html>

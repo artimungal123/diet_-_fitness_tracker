@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthFit - Main Page</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- <script src="main.js"></script> -->
+</head>
+<body>
+  <header>
+    <h1>HealthFit</h1>
+  </header>
+  <main>
+    <!-- Add Today's Menu -->
+    <section class="card">
+      <h2>Add Today's Menu</h2>
+      <div class="form-group">
+        <label for="messMenu">Food from Mess Menu:</label>
+        <textarea id="messMenu" placeholder="Enter today's mess menu"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="extraFood">Extra Food (if required):</label>
+        <textarea id="extraFood" placeholder="Enter extra food items"></textarea>
+      </div>
+      <button onclick="saveMenu()">Save Menu</button>
+    </section>
+
+    <!-- Exercise -->
+    <section class="card">
+      <h2>Exercise Recommendation</h2>
+      <p id="exerciseText">No exercise added yet.</p>
+      <button onclick="suggestExercise()">Suggest Exercise</button>
+    </section>
+
+    <!-- History -->
+    <section class="card">
+      <h2>History</h2>
+      <ul id="historyList">
+        <li>No history yet.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Feedback -->
+  <footer>
+    <button id="feedbackBtn">Feedback</button>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
